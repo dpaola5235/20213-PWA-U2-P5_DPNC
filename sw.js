@@ -25,12 +25,12 @@ self.addEventListener("install",(event) =>{
     .then(cache =>{
         return cache.addAll([
             "/20213-PWA-U2-P5_DPNC",
-            "index.html",
-            "css/page.css",
-            "image/inicio.png",
-            "image/offline.png",
-            "js/app.js",
-            "pages/view-offline.html"
+            "/20213-PWA-U2-P5_DPNC/index.html",
+            "/20213-PWA-U2-P5_DPNC/css/page.css",
+            "/20213-PWA-U2-P5_DPNC/image/inicio.png",
+            "/20213-PWA-U2-P5_DPNC/image/offline.png",
+            "/20213-PWA-U2-P5_DPNC/js/app.js",
+            "/20213-PWA-U2-P5_DPNC/pages/view-offline.html"
         ]);
     });
 
@@ -116,12 +116,12 @@ self.addEventListener("fetch", (event)=>{
              console.log("Error al solicitar el recurso");
              console.log(event.request.headers);
              if(event.request.headers.get("accept").includes("text/html")){
-                return caches.match("/pages/view-offline.html");
+                return caches.match("/20213-PWA-U2-P5_DPNC/pages/view-offline.html");
 
              }
              if(event.request.url.includes(".jpg") || event.request.url.includes(".png")){
                  console.log("No esta la imagen");
-                return caches.match("/image/offline.png");
+                return caches.match("/20213-PWA-U2-P5_DPNC/image/offline.png");
              }
 
          });
