@@ -1,6 +1,6 @@
 let url = window.location.href;
 //PWA-U2-P3-DPNC/sw.js
-let swDirect = '20213-PWA-U2-P5_DPNC/sw.js'
+let swDirect = '/20213-PWA-U2-P5_DPNC/sw.js'
 
 if (navigator.serviceWorker) {
   console.log("Si esta disponible")
