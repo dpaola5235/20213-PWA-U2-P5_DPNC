@@ -108,7 +108,7 @@ self.addEventListener("fetch", (event)=>{
                  //guardo la respuesta de red en caché
                  console.log(event.request);
                  cache.put(event.request,respNet);
-                 cleanCache(CACHE_DYNAMIC_NAME,5)
+                 cleanCache(CACHE_DYNAMIC_NAME,8)
              });
              //regreso la respuesta de la red
              return respNet.clone();
