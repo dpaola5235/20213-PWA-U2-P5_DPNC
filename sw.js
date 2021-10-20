@@ -29,7 +29,7 @@ self.addEventListener("install",(event) =>{
             "/20213-PWA-U2-P5_DPNC/css/page.css",
             "/20213-PWA-U2-P5_DPNC/image/inicio.png",
             "/20213-PWA-U2-P5_DPNC/image/offline.png",
-            "js/app.js",
+            "/20213-PWA-U2-P5_DPNC/js/app.js",
             "/20213-PWA-U2-P5_DPNC/pages/view-offline.html"
         ]);
     });
